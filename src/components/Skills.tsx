@@ -15,25 +15,25 @@ const Skills: React.FC<SkillsProps> = ({ scrollY }) => {
       icon: <Code className="w-8 h-8" />,
       title: "Frontend Development",
       color: "from-blue-400 to-cyan-500",
-      skills: ["React", "Vue.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "SASS"]
+      skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"]
     },
     {
       icon: <Server className="w-8 h-8" />,
       title: "Backend Development",
       color: "from-green-400 to-emerald-500",
-      skills: ["Node.js", "Express.js", "Python", "Django", "PHP", "Laravel", "REST APIs", "GraphQL"]
+      skills: ["Node.js", "Express.js", "REST APIs"]
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Database & Cloud",
       color: "from-purple-400 to-violet-500",
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "AWS", "Docker", "Kubernetes", "Firebase"]
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase"]
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Mobile Development",
       color: "from-pink-400 to-rose-500",
-      skills: ["React Native", "Flutter", "Ionic", "Progressive Web Apps", "Mobile UI/UX", "App Store Deployment"]
+      skills: ["React Native", "Flutter"]
     },
     {
       icon: <Palette className="w-8 h-8" />,
@@ -45,7 +45,7 @@ const Skills: React.FC<SkillsProps> = ({ scrollY }) => {
       icon: <Globe className="w-8 h-8" />,
       title: "DevOps & Others",
       color: "from-cyan-400 to-teal-500",
-      skills: ["Git", "GitHub Actions", "CI/CD", "Testing", "Agile", "Scrum", "Linux", "Nginx"]
+      skills: ["Git", "GitHub Actions", "CI/CD", "Testing"]
     }
   ];
 

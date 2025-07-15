@@ -55,16 +55,12 @@ const About: React.FC<AboutProps> = ({ scrollY }) => {
               </span>
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with 5+ years of experience creating 
+              I'm a passionate web developer with 2 years of experience creating 
               digital solutions that make a difference. I specialize in modern web technologies 
               and love turning complex problems into simple, elegant designs.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community.
-            </p>
             <div className="flex flex-wrap gap-3 pt-4">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker'].map((tech) => (
+              {['React', 'TypeScript', 'Node.js'].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium hover:bg-white/20 transition-colors"

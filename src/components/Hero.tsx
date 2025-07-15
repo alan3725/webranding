@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin } from 'lucide-react';
 
 interface HeroProps {
   scrollY: number;
@@ -33,9 +33,9 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
         >
           <h1 className="text-6xl md:text-8xl font-bold leading-tight">
             <span className="block bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
-              Creative
+              Hi, I'm Dana
             </span>
-            <span className="block text-white mt-2">Developer</span>
+            <span className="block text-white mt-2">A Web Developer</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -44,22 +44,16 @@ const Hero: React.FC<HeroProps> = ({ scrollY }) => {
 
           <div className="flex justify-center space-x-6 pt-8">
             <a
-              href="#"
+              href="https://github.com/DanaMaulana"
               className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
-            >
+            target='_blank'>
               <Github size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/danamaulana/"
               className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
-            >
+            target='_blank'>
               <Linkedin size={24} />
-            </a>
-            <a
-              href="#"
-              className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:rotate-12"
-            >
-              <Mail size={24} />
             </a>
           </div>
 

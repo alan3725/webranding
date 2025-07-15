@@ -1,18 +1,12 @@
 import React from 'react';
 import { 
   Github, 
-  Linkedin, 
-  Twitter, 
-  Instagram, 
-  Mail, 
-  Phone, 
-  MapPin, 
+  Linkedin,
   Heart,
   ExternalLink,
   Code,
   Briefcase,
   User,
-  MessageCircle
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -29,55 +23,55 @@ const Footer: React.FC = () => {
     {
       name: 'GitHub',
       icon: <Github size={20} />,
-      href: 'https://github.com',
+      href: 'https://github.com/DanaMaulana',
       color: 'hover:text-gray-300'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/danamaulana/',
       color: 'hover:text-blue-400'
     },
-    {
-      name: 'Twitter',
-      icon: <Twitter size={20} />,
-      href: 'https://twitter.com',
-      color: 'hover:text-sky-400'
-    },
-    {
-      name: 'Instagram',
-      icon: <Instagram size={20} />,
-      href: 'https://instagram.com',
-      color: 'hover:text-pink-400'
-    }
+    // {
+    //   name: 'Twitter',
+    //   icon: <Twitter size={20} />,
+    //   href: 'https://x.com/DanaMaulanaDev',
+    //   color: 'hover:text-sky-400'
+    // },
+    // {
+    //   name: 'Instagram',
+    //   icon: <Instagram size={20} />,
+    //   href: 'https://instagram.com',
+    //   color: 'hover:text-pink-400'
+    // }
   ];
 
   const contactInfo = [
     {
-      icon: <Mail size={18} />,
-      label: 'Email',
-      value: 'hello@devfolio.com',
-      href: 'mailto:hello@devfolio.com'
+      icon: <Linkedin size={18} />,
+      label: 'LinkedIn',
+      value: 'Dana Maulana',
+      href: 'https://www.linkedin.com/in/danamaulana/'
     },
-    {
-      icon: <Phone size={18} />,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
-    {
-      icon: <MapPin size={18} />,
-      label: 'Location',
-      value: 'San Francisco, CA',
-      href: '#'
-    }
+    // {
+    //   icon: <Phone size={18} />,
+    //   label: 'Phone',
+    //   value: '+1 (555) 123-4567',
+    //   href: 'tel:+15551234567'
+    // },
+    // {
+    //   icon: <MapPin size={18} />,
+    //   label: 'Location',
+    //   value: 'San Francisco, CA',
+    //   href: '#'
+    // }
   ];
 
   const quickLinks = [
     { label: 'Resume/CV', href: '#', icon: <ExternalLink size={16} /> },
     { label: 'Blog', href: '#', icon: <ExternalLink size={16} /> },
-    { label: 'Testimonials', href: '#', icon: <MessageCircle size={16} /> },
-    { label: 'Services', href: '#', icon: <Briefcase size={16} /> }
+    // { label: 'Testimonials', href: '#', icon: <MessageCircle size={16} /> },
+    // { label: 'Services', href: '#', icon: <Briefcase size={16} /> }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -180,37 +174,18 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="border-t border-white/10 pt-8 mb-8">
-          <div className="max-w-md mx-auto text-center">
-            <h3 className="text-lg font-semibold mb-2 text-white">Stay Updated</h3>
-            <p className="text-gray-300 mb-4 text-sm">
-              Subscribe to get notified about new projects and blog posts
-            </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent text-white placeholder-gray-400"
-              />
-              <button className="px-6 py-2 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-r-lg hover:from-purple-600 hover:to-cyan-600 transition-colors font-medium">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>&copy; {currentYear} DevFolio. All rights reserved.</span>
+              <span>&copy; {currentYear} Dana Maulana. All rights reserved.</span>
             </div>
             
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <span>Made with</span>
               <Heart size={16} className="text-red-400 animate-pulse" />
-              <span>using React & Tailwind CSS</span>
+              {/* <span>using React & Tailwind CSS</span> */}
             </div>
             
             <div className="flex space-x-6 text-sm">

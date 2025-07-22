@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, Zap } from 'lucide-react';
+import ECommerceIMG from '../assets/e_commerce_platform.jpg';
+import WeatherDIMG from '../assets/weather_dashboard.png';
 
 interface ProjectsProps {
   scrollY: number;
@@ -13,10 +15,10 @@ const Projects: React.FC<ProjectsProps> = ({ scrollY }) => {
     {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features real-time inventory, payment processing, and admin dashboard.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      image: ECommerceIMG,
+      tech: ["React", "Vite", "Vercel", "Supabase"],
       github: "#",
-      live: "#"
+      live: "https://alan-rahayu-commerce.vercel.app/"
     },
     {
       title: "Task Management App",
@@ -24,15 +26,15 @@ const Projects: React.FC<ProjectsProps> = ({ scrollY }) => {
       image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
       tech: ["Vue.js", "Express", "MongoDB", "Socket.io"],
       github: "#",
-      live: "#"
+      live: "https://taskmanagement-opal.vercel.app/"
     },
     {
       title: "Weather Dashboard",
       description: "A beautiful weather application with interactive maps, forecasts, and location-based services using modern APIs.",
-      image: "https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: WeatherDIMG,
       tech: ["React", "TypeScript", "OpenWeather API", "Mapbox"],
       github: "#",
-      live: "#"
+      live: "https://weather-dashboard-sand-psi.vercel.app/"
     },
     {
       title: "Social Media Analytics",
@@ -40,7 +42,7 @@ const Projects: React.FC<ProjectsProps> = ({ scrollY }) => {
       image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
       tech: ["Python", "Django", "React", "D3.js"],
       github: "#",
-      live: "#"
+      live: "https://social-media-analytics-self.vercel.app/"
     }
   ];
 
@@ -99,12 +101,14 @@ const Projects: React.FC<ProjectsProps> = ({ scrollY }) => {
                     <a
                       href={project.github}
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                      target='_blank'
                     >
                       <Github size={16} />
                     </a>
                     <a
                       href={project.live}
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                      target='_blank'
                     >
                       <ExternalLink size={16} />
                     </a>

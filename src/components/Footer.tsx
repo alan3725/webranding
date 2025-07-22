@@ -68,8 +68,8 @@ const Footer: React.FC = () => {
   ];
 
   const quickLinks = [
-    { label: 'Resume/CV', href: '#', icon: <ExternalLink size={16} /> },
-    { label: 'Blog', href: '#', icon: <ExternalLink size={16} /> },
+    { label: 'Resume/CV', href: 'https://siteresume.vercel.app/', icon: <ExternalLink size={16} /> },
+    { label: 'Blog', href: 'https://blogsite-ashy.vercel.app/', icon: <ExternalLink size={16} /> },
     // { label: 'Testimonials', href: '#', icon: <MessageCircle size={16} /> },
     // { label: 'Services', href: '#', icon: <Briefcase size={16} /> }
   ];
@@ -139,6 +139,7 @@ const Footer: React.FC = () => {
                   <a
                     href={link.href}
                     className="flex items-center space-x-2 text-gray-300 hover:text-cyan-400 transition-colors group"
+                    target='_blank'
                   >
                     <span className="group-hover:scale-110 transition-transform">
                       {link.icon}
@@ -159,6 +160,7 @@ const Footer: React.FC = () => {
                   <a
                     href={contact.href}
                     className="flex items-start space-x-3 text-gray-300 hover:text-cyan-400 transition-colors group"
+                    target='_blank'
                   >
                     <span className="mt-1 group-hover:scale-110 transition-transform">
                       {contact.icon}
